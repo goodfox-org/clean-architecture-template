@@ -1,9 +1,6 @@
-﻿namespace CleanArchitecture.Template.RestApi.Setup
-{
-    public static class ApplicationSetup
-    {
-        public static WebApplication SetupApplication(this WebApplicationBuilder builder)
-        {
+﻿namespace CleanArchitecture.Template.RestApi.Setup {
+    public static class ApplicationSetup {
+        public static WebApplication SetupApplication(this WebApplicationBuilder builder) {
             var services = builder.Services;
 
             services.AddControllers();
@@ -13,8 +10,7 @@
             return builder.Build();
         }
 
-        public static WebApplication ConfigureHttpRequestPipeline(this WebApplication app)
-        {
+        public static WebApplication ConfigureHttpRequestPipeline(this WebApplication app) {
             app.UseSwaggerForScooters();
             app.UseRouting();
             app.MapControllers();

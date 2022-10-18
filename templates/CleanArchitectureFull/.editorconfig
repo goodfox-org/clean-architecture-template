@@ -5,7 +5,11 @@ root = true
 indent_style = space
 
 # Xml files
-[*.xml]
+[*.{xml,csproj,proj,projitems,shproj,props,targets,config,nuspec,resx,vsixmanifest,vsct}]
+indent_size = 2
+
+# Script files
+[*.{json,ps1,psd1,psm1,sh}]
 indent_size = 2
 
 # C# files
@@ -18,11 +22,8 @@ indent_size = 4
 tab_width = 4
 
 # New line preferences
-end_of_line = crlf
+end_of_line = lf
 insert_final_newline = false
-
-#### .NET Coding Conventions ####
-[*.{cs,vb}]
 
 # Organize usings
 dotnet_separate_import_directive_groups = true
@@ -127,13 +128,7 @@ csharp_using_directive_placement = outside_namespace:silent
 #### C# Formatting Rules ####
 
 # New line preferences
-csharp_new_line_before_catch = true
-csharp_new_line_before_else = true
-csharp_new_line_before_finally = true
-csharp_new_line_before_members_in_anonymous_types = true
-csharp_new_line_before_members_in_object_initializers = true
-csharp_new_line_before_open_brace = all
-csharp_new_line_between_query_expression_clauses = true
+csharp_new_line_before_open_brace = none
 
 # Indentation preferences
 csharp_indent_block_contents = true
@@ -356,3 +351,8 @@ dotnet_naming_style.camelcase.required_prefix =
 dotnet_naming_style.camelcase.required_suffix = 
 dotnet_naming_style.camelcase.word_separator = 
 dotnet_naming_style.camelcase.capitalization = camel_case
+
+dotnet_diagnostic.IDE0055.severity = error
+dotnet_diagnostic.IDE1006.severity = error
+dotnet_diagnostic.IDE0051.severity = error
+dotnet_diagnostic.IDE0052.severity = error
