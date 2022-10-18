@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Me",
+    "classifications": [ "AspNetCore" ],
+    "identity": "CleanArchitecture.Template",
+    "name": "Clean architecture template",
+    "shortName": "clean-arch",
+    "sourceName": "Template",
+    "tags": {
+      "language": "C#",
+      "type": "solution"
+    },
+    "sources": [
+      {
+        "modifiers": [
+          {
+            "exclude": [ ".vs/**", ".template_config/**" ]
+          }
+        ]
+      }
+    ]
+  }
