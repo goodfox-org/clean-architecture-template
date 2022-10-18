@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Template.RestApi", "presentation\CleanArchitecture.Template.RestApi\CleanArchitecture.Template.RestApi.csproj", "{30408131-5686-4A9D-B298-85B07EE4F148}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{13E62CA5-A61E-4148-B4E7-F3FAEBC25A42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Template.Domain", "core\CleanArchitecture.Template.Domain\CleanArchitecture.Template.Domain.csproj", "{3E9287BE-EB7C-4D76-92C5-A49163B4D17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Template.Application", "core\CleanArchitecture.Template.Application\CleanArchitecture.Template.Application.csproj", "{932D281C-55FB-4A94-88A3-C76E94D6A375}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +26,18 @@ Global
 		{30408131-5686-4A9D-B298-85B07EE4F148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30408131-5686-4A9D-B298-85B07EE4F148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30408131-5686-4A9D-B298-85B07EE4F148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9287BE-EB7C-4D76-92C5-A49163B4D17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9287BE-EB7C-4D76-92C5-A49163B4D17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9287BE-EB7C-4D76-92C5-A49163B4D17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9287BE-EB7C-4D76-92C5-A49163B4D17E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932D281C-55FB-4A94-88A3-C76E94D6A375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932D281C-55FB-4A94-88A3-C76E94D6A375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932D281C-55FB-4A94-88A3-C76E94D6A375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932D281C-55FB-4A94-88A3-C76E94D6A375}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{30408131-5686-4A9D-B298-85B07EE4F148} = {0656E3A5-E3D5-412A-8522-C44BDD58A111}
+		{3E9287BE-EB7C-4D76-92C5-A49163B4D17E} = {13E62CA5-A61E-4148-B4E7-F3FAEBC25A42}
+		{932D281C-55FB-4A94-88A3-C76E94D6A375} = {13E62CA5-A61E-4148-B4E7-F3FAEBC25A42}
 	EndGlobalSection
 EndGlobal
