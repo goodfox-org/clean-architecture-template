@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Template.RestApi.Setup {
+namespace CleanArchitecture.Template.RestApi.Setup {
     public static class ApplicationSetup {
         public static WebApplication SetupApplication(this WebApplicationBuilder builder) {
             var services = builder.Services;

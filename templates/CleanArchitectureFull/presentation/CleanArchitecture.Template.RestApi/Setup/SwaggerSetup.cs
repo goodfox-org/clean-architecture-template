@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Template.RestApi.Setup {
+namespace CleanArchitecture.Template.RestApi.Setup {
     public static class SwaggerSetup {
         public static void AddSwagger(this IServiceCollection services) {
             services.AddEndpointsApiExplorer();
