@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "CleanArchitecture.Template.GrpcApi";
+
+package user;
+
+service User {
+  rpc CreateUser (CreateUserRequest) returns (NewUser);
+}
+
+message CreateUserRequest {
+  string firstName = 1;
+  string lastName = 2;
+}
+
+message NewUser {
+  string userId = 1;
+}

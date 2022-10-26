@@ -11,7 +11,7 @@ namespace CleanArchitecture.Template.RestApi.Setup {
         }
 
         public static WebApplication ConfigureHttpRequestPipeline(this WebApplication app) {
-            app.UseSwaggerForScooters();
+            app.UseCustomSwagger();
             app.UseRouting();
             app.MapControllers();
 

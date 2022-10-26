@@ -5,7 +5,7 @@ namespace CleanArchitecture.Template.RestApi.Setup {
             services.AddSwaggerGen();
         }
 
-        public static void UseSwaggerForScooters(this WebApplication app) {
+        public static void UseCustomSwagger(this WebApplication app) {
             if (app.Environment.IsProduction())
                 return;
 
