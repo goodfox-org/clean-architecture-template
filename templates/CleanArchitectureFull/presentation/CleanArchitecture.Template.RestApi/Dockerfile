@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine AS base
+FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine AS base
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS restore
+FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS restore
 WORKDIR /src
 COPY ["presentation/CleanArchitecture.Template.RestApi/CleanArchitecture.Template.RestApi.csproj", "presentation/CleanArchitecture.Template.RestApi/"]
 RUN dotnet restore "presentation/CleanArchitecture.Template.RestApi/CleanArchitecture.Template.RestApi.csproj"
