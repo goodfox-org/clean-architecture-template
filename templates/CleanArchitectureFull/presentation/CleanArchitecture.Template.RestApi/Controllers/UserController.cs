@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.Template.RestApi.Controllers {
     [ApiController]
-    [Route("[controller]/[action]")]
+    [Route("[controller]")]
     public class UserController : ControllerBase {
         private readonly IMediator _mediator;
 

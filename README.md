@@ -3,9 +3,18 @@
 ### Build, Run
 
 ```bash
-cd /repo/root
+cd /repo/root/templates/CleanArchitectureFull
 dotnet build
-dotnet run -p .\Scooters.Template.Api\Scooters.Template.Api.csproj
+dotnet dotnet run --project .\presentation\CleanArchitecture.Template.RestApi\CleanArchitecture.Template.RestApi.csproj
+```
+
+```bash
+curl -i 'http://localhost:5000/user' \
+--header 'Content-Type: application/json' \
+--data '{
+    "firstName": "John",
+    "lastName": "Doe"
+}'
 ```
 
 # MediatR, CQRS, and FluentValidation
