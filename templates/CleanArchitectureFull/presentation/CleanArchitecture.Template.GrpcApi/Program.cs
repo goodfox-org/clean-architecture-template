@@ -1,7 +1,6 @@
 using CleanArchitecture.Template.Application.User.CreateUser;
 using CleanArchitecture.Template.GrpcApi.Services;
 using FluentValidation;
-using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // For instructions on how to configure Kestrel and gRPC clients on macOS, visit https://go.microsoft.com/fwlink/?linkid=2099682
 
 builder.Services.AddGrpc();
-builder.Services.AddMediatR(typeof(CreateUserCommand));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<CreateUserCommand>());
 builder.Services.AddValidatorsFromAssemblyContaining<CreateUserCommandValidator>();
 
 var app = builder.Build();
