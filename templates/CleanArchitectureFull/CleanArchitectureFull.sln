@@ -16,7 +16,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Template.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{51796E62-5A61-442B-AE34-7D848DE6E874}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Template.GrpcApi", "presentation\CleanArchitecture.Template.GrpcApi\CleanArchitecture.Template.GrpcApi.csproj", "{9E5CEECB-EC69-4E07-A973-F859138C6B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Template.GrpcApi", "presentation\CleanArchitecture.Template.GrpcApi\CleanArchitecture.Template.GrpcApi.csproj", "{9E5CEECB-EC69-4E07-A973-F859138C6B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F550987-D24B-41E2-8CD8-0F7B60E3DFE4}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
