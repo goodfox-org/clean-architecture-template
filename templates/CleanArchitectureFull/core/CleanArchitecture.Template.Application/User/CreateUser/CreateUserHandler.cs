@@ -17,6 +17,9 @@ public class CreateUserHandler : IRequestHandler<CreateUserCommand, OneOf<Create
         if (!validationResult.IsValid)
             return validationResult;
 
+        //simulate work
+        await Task.Delay(100, cancellationToken);
+
         return new CreateUserResponse(Guid.NewGuid());
     }
 }

@@ -1,21 +1,21 @@
-namespace CleanArchitecture.Template.RestApi.Setup {
-    public static class ApplicationSetup {
-        public static WebApplication SetupApplication(this WebApplicationBuilder builder) {
-            var services = builder.Services;
+namespace CleanArchitecture.Template.RestApi.Setup;
 
-            services.AddControllers();
-            services.AddDependencyInjection();
-            services.AddSwagger();
+public static class ApplicationSetup {
+    public static WebApplication SetupApplication(this WebApplicationBuilder builder) {
+        var services = builder.Services;
 
-            return builder.Build();
-        }
+        services.AddControllers();
+        services.AddDependencyInjection();
+        services.AddSwagger();
 
-        public static WebApplication ConfigureHttpRequestPipeline(this WebApplication app) {
-            app.UseCustomSwagger();
-            app.UseRouting();
-            app.MapControllers();
+        return builder.Build();
+    }
 
-            return app;
-        }
+    public static WebApplication ConfigureHttpRequestPipeline(this WebApplication app) {
+        app.UseCustomSwagger();
+        app.UseRouting();
+        app.MapControllers();
+
+        return app;
     }
 }

@@ -39,7 +39,7 @@ public class CreateUserHandlerTests {
     [InlineData(null, "Doe")]
     [InlineData("John", null)]
     [InlineData(null, null)]
-    public async Task Given_invalid_input_returns_appropriate_errors(string firstName, string lastName) {
+    public async Task Given_invalid_input_returns_appropriate_errors(string? firstName, string? lastName) {
         var validator = new CreateUserCommandValidator();
         var handler = new CreateUserHandler(validator);
         var request = new CreateUserCommand(firstName, lastName);
